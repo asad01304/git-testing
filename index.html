@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Git Basics : playing with git">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Git Basics</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/asad01304/git-testing">View on GitHub</a>
+
+          <h1 id="project_title">Git Basics</h1>
+          <h2 id="project_tagline">playing with git</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/asad01304/git-testing/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/asad01304/git-testing/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h3>
+
+<p>Download &amp; Install git in your machine from <a href="http://git-scm.com/">http://git-scm.com/</a></p>
+
+<h3>
+<a id="set-config" class="anchor" href="#set-config" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set Config</h3>
+
+<p>We might set some basic git config for my machine:-</p>
+
+<pre><code>$ git config --global user.name "Asad Rahman"
+$ git config --global user.email "asad.dk.bd@gmail.com"
+$ git config --color.ui true
+</code></pre>
+
+<h3>
+<a id="help" class="anchor" href="#help" aria-hidden="true"><span class="octicon octicon-link"></span></a>Help</h3>
+
+<p>To show list of all git commands use help:-</p>
+
+<pre><code>$ git help
+</code></pre>
+
+<p>To get details of a particular command use git help  format</p>
+
+<pre><code>$ git help init
+</code></pre>
+
+<h3>
+<a id="initiate-git-for-a-project" class="anchor" href="#initiate-git-for-a-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initiate git for a project</h3>
+
+<p>Move to your destination directory and use git init</p>
+
+<pre><code>$ cd my_project_dir
+$ git init
+</code></pre>
+
+<p>Check git status. Git status gives you list of untracked files, list of modified files and current commit head</p>
+
+<pre><code>$ git status
+</code></pre>
+
+<h3>
+<a id="playing-with-some-basic-commands" class="anchor" href="#playing-with-some-basic-commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Playing with some basic commands</h3>
+
+<p>Add a file "index.php" to staging</p>
+
+<pre><code>$ git add index.php
+</code></pre>
+
+<p>Check git status, will show index.php as tracked new file in staging.</p>
+
+<p>Make your first commit:-</p>
+
+<pre><code>$ git commit -m "Here put some message"
+</code></pre>
+
+<p>Check git status again</p>
+
+<p>Check git log for commit history</p>
+
+<pre><code>$ git log
+</code></pre>
+
+<p>List all brunches and check the current brunch </p>
+
+<pre><code>$ git brunch
+</code></pre>
+
+<p>Create a new brunch</p>
+
+<pre><code>$ git brunch my-first-brunch-name
+</code></pre>
+
+<p>Check the brunch list again</p>
+
+<p>Lets move to the new created brunch, use git checkout command:-</p>
+
+<pre><code>$ git checkout my-first-brunch-name
+</code></pre>
+
+<p>Add some more files here and do some commits in this brunch.</p>
+
+<h3>
+<a id="play-with-git-add-command" class="anchor" href="#play-with-git-add-command" aria-hidden="true"><span class="octicon octicon-link"></span></a>Play with git add command</h3>
+
+<p>Add all files</p>
+
+<pre><code>$ git add --all
+</code></pre>
+
+<p>Add all .txt files in current directory</p>
+
+<pre><code>$ git add *.txt
+</code></pre>
+
+<p>Add all .txt files in docs directory</p>
+
+<pre><code>$ git add docs/*.txt            
+</code></pre>
+
+<p>Add all files in docs directory</p>
+
+<pre><code>$ git add docs/         
+</code></pre>
+
+<p>Add all .txt files in all directory &amp; sub directories</p>
+
+<pre><code>$ git add "*.txt"           
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Git Basics maintained by <a href="https://github.com/asad01304">asad01304</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
